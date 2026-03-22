@@ -1,0 +1,27 @@
+.srv-cards { padding: 5rem 0; background: var(--cream); }
+.srv-cards__grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 3rem 4rem; }
+.srv-cards__card { display: flex; flex-direction: column; gap: 0.4rem; }
+.srv-cards__icon { color: var(--teal); margin-bottom: 0.5rem; }
+.srv-cards__name { font-size: 1rem; font-weight: 700; color: var(--text-dark); }
+.srv-cards__desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.7; }
+
+.srv-craft { padding: 5rem 0; background: var(--white); }
+.srv-craft__inner { display: grid; grid-template-columns: 1fr 1.6fr; gap: 4rem; align-items: center; }
+.srv-craft__products { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.2rem; }
+.srv-craft__item { text-align: center; }
+.srv-craft__item img {
+  width: 100%; aspect-ratio: 3/4; object-fit: cover;
+  border-radius: 12px; margin-bottom: 0.5rem;
+  background: var(--teal-light);
+}
+.srv-craft__name { font-size: 0.85rem; font-weight: 500; margin-bottom: 0.15rem; }
+.srv-craft__price { font-size: 0.8rem; color: var(--text-muted); }
+
+@media (max-width: 900px) {
+  .srv-cards__grid { grid-template-columns: repeat(2,1fr); gap: 2rem; }
+  .srv-craft__inner { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .srv-cards__grid { grid-template-columns: 1fr; }
+  .srv-craft__products { grid-template-columns: repeat(3,1fr); }
+}

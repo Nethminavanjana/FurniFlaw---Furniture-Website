@@ -1,0 +1,35 @@
+.shop { padding-top: calc(var(--nav-h) + 2rem); min-height: 80vh; background: var(--cream); }
+.shop__header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem; }
+.shop__search-wrap { position: relative; }
+.shop__search {
+  padding: 0.6rem 2.4rem 0.6rem 1rem;
+  border: 1.5px solid var(--border); border-radius: 8px;
+  font-size: 0.85rem; outline: none; width: 220px;
+  background: var(--white); transition: border-color 0.2s;
+}
+.shop__search:focus { border-color: var(--teal); }
+.shop__search-icon { position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none; }
+.shop__grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; padding-bottom: 2rem; }
+.shop__card {
+  background: var(--white); border-radius: 14px; padding: 1.5rem;
+  text-align: center; transition: box-shadow 0.25s, transform 0.25s;
+}
+.shop__card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+.shop__img-wrap { height: 220px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+.shop__img-wrap img { max-height: 100%; object-fit: contain; }
+.shop__name { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.2rem; }
+.shop__price { font-size: 0.85rem; font-weight: 500; color: var(--teal); margin-bottom: 0.9rem; }
+.shop__btn { width: 100%; justify-content: center; }
+.shop__empty { text-align: center; color: var(--text-muted); padding: 3rem 0; font-size: 1rem; }
+.shop__more { display: flex; justify-content: center; padding: 1.5rem 0 2.5rem; }
+.shop__more-btn { background: none; border: 1.5px solid var(--border); border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: var(--text-mid); transition: border-color 0.2s, color 0.2s; }
+.shop__more-btn:hover { border-color: var(--teal); color: var(--teal); }
+.shop__sofa { position: relative; overflow: hidden; height: 260px; }
+.shop__sofa img { width: 60%; max-width: 500px; object-fit: cover; position: absolute; right: 0; bottom: 0; border-radius: 12px 0 0 0; }
+@media (max-width: 768px) {
+  .shop__grid { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 480px) {
+  .shop__grid { grid-template-columns: 1fr; }
+  .shop__header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+}
