@@ -54,10 +54,7 @@ export default function Shop() {
         </div>
       </div>
 
-      {/* Sofa decoration */}
-      <div className="shop__sofa">
-        <img src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&w=700" alt="Sofa decoration"/>
-      </div>
+      
     </main>
   );
 }

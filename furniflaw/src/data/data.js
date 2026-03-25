@@ -1,8 +1,12 @@
+import ergonomicImg from "../images/ergonomic_chair.jpg";
+import nordicImg from "../images/nordic.jpeg";
+import kruzoImg from "../images/kruzo.jpg";
+
 export const products = [
-  { id:1, name:"Nordic Chair",    price:"Rs.25,000/=", desc:"Simple and modern style.",        img:"https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&w=500" },
-  { id:2, name:"Kruzo Chair",     price:"Rs.21,000/=", desc:"Stylish and unique design.",      img:"https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&w=500" },
-  { id:3, name:"Ergonomic Chair", price:"Rs.28,000/=", desc:"Comfortable and good for posture.",img:"https://images.pexels.com/photos/1957478/pexels-photo-1957478.jpeg?auto=compress&w=500" },
-  { id:4, name:"Kruzo Chair",     price:"Rs.21,000/=", desc:"Minimalist comfort.",             img:"https://images.pexels.com/photos/4718894/pexels-photo-4718894.jpeg?auto=compress&w=500" },
+  { id:1, name:"Nordic Chair",    price:"Rs.25,000/=", desc:"Simple and modern style.",         img: nordicImg },
+  { id:2, name:"Kruzo Chair",     price:"Rs.21,000/=", desc:"Stylish and unique design.",       img:"https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&w=500" },
+  { id:3, name:"Ergonomic Chair", price:"Rs.28,000/=", desc:"Comfortable and good for posture.", img: ergonomicImg },
+  { id:4, name:"Kruzo Chair",     price:"Rs.21,000/=", desc:"Minimalist comfort.",             img: kruzoImg },
   { id:5, name:"Nordic Chair",    price:"Rs.25,000/=", desc:"Bold statement piece.",           img:"https://images.pexels.com/photos/2082090/pexels-photo-2082090.jpeg?auto=compress&w=500" },
   { id:6, name:"Ergonomic Chair", price:"Rs.28,000/=", desc:"Sleek round form.",               img:"https://images.pexels.com/photos/116910/pexels-photo-116910.jpeg?auto=compress&w=500" },
 ];

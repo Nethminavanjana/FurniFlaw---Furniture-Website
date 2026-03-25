@@ -4,6 +4,7 @@ import Reviews from "../components/Reviews";
 import ServiceIcon from "../components/ServiceIcon";
 import { products, blogPosts, services } from "../data/data";
 import "./Home.css";
+import heroImg from "../images/home2.jpg";
 
 const INTERIOR_IMGS = [
   "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&w=400",
@@ -31,7 +32,7 @@ export default function Home() {
             </div>
           </div>
           <div className="home-hero__img">
-            <img src="https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&w=600" alt="Hero sofa"/>
+            <img src={heroImg} alt="Hero sofa"/>
           </div>
         </div>
       </section>
