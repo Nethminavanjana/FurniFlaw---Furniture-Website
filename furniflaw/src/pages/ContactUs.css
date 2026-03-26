@@ -26,6 +26,7 @@
   padding: 5rem 0 0;
   position: relative;
   overflow: hidden;
+  padding: 5rem 0 5rem; 
 }
 .contact-form-wrap {
   max-width: 760px;

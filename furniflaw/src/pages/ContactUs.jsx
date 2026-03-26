@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./ContactUs.css";
+import heroImg from "../images/home2.jpg";
 
 const contactDetails = [
   {
@@ -81,8 +82,7 @@ export default function ContactUs() {
           </div>
           <div className="page-hero__img">
             <img
-              src="https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&w=600"
-              alt="Sofa"
+              src={heroImg}
             />
           </div>
         </div>
@@ -167,13 +167,7 @@ export default function ContactUs() {
           </form>
         </div>
 
-        {/* Decorative sofa */}
-        <div className="contact-sofa">
-          <img
-            src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&w=700"
-            alt="Sofa decoration"
-          />
-        </div>
+        
       </section>
     </main>
   );
